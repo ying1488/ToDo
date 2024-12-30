@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import CssBaseline from '@mui/material/CssBaseline'
 import TodoList from './TodoList'
+import Navbar from './Navbar'
 
 function App() {
   const [toDo] = useState(0)
@@ -8,9 +9,9 @@ function App() {
   return (
     <>
    <CssBaseline />
-        <h1>To Dos</h1>
-
+   <Navbar/>
         <TodoList/>
+
     </>
   )
 }
